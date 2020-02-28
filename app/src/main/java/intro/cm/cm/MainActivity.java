@@ -1,5 +1,6 @@
 package intro.cm.cm;
 
+import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -25,13 +26,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Fragment fragment = new AddNotesFragment();
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction transaction = fm.beginTransaction();
-                transaction.replace(R.id.contentFragment, fragment);
-                transaction.commit();
+                Intent intent = new Intent(MainActivity.this, AddNotesActivity.class);
+                startActivity(intent);
 
-                finish();
             }
         });
 
