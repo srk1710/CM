@@ -30,4 +30,18 @@ public class NotasBD {
                 "DROP TABLE " + Nota.TABLE_NAME + ";";
 
     }
+
+    public static abstract class Categoria implements BaseColumns {
+        public static final String TABLE_NAME = "categoria";
+        public static final String COLUMN_desc = "desc";
+
+        public static final String SQL_CREATE_ENTRIES =
+                "CREATE TABLE " + Categoria.TABLE_NAME + "(" +
+                        Nota._ID + INT_TYPE + " PRIMARY KEY," +
+                        Nota.COLUMN_title + TEXT_TYPE + "," +
+                        Nota.COLUMN_desc + TEXT_TYPE + "," +
+                        Nota.COLUMN_date + TEXT_TYPE + ");";
+
+    }
+
 }
