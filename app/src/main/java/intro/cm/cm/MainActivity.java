@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     BD mdbhelper;
     SQLiteDatabase db;
-    Cursor c, c2;
+    Cursor c;
     ListView lista;
     SimpleCursorAdapter adapter;
 
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, AddNotesActivity.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -58,15 +59,10 @@ public class MainActivity extends AppCompatActivity {
             c = db.query(false, NotasBD.Nota.TABLE_NAME, NotasBD.Nota.PROJECTION, null, null,
                     null, null, null, null);
 
-            c2 = db.query(false, NotasBD.Categoria.TABLE_NAME, NotasBD.Categoria.PROJECTION, null, null,
-                     null, null, null, null);
-
             adapter = new SimpleCursorAdapter(this,
                     android.R.layout.two_line_list_item,
                     c,
-                    //c2,
-                    new String[] {NotasBD.Nota.COLUMN_title, NotasBD.Nota.COLUMN_id_categoria},
-                    //new String[] {NotasBD.Categoria._ID, NotasBD.Categoria.COLUMN_descr},
+                    new String[] {NotasBD.Nota.COLUMN_title, NotasBD.Nota.COLUMN_desc},
                     new int[] {android.R.id.text1, android.R.id.text2},
                     SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 

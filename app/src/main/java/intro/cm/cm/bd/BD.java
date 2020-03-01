@@ -8,7 +8,7 @@ import java.util.Calendar;
 
 public class BD extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 2;
+    public static final int DATABASE_VERSION = 3;
     public static final String DATABASE_NAME = "notas.bd";
 
     public BD(Context context) { super(context, DATABASE_NAME, null, DATABASE_VERSION); }
