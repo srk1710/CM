@@ -149,7 +149,6 @@ public class NotasActivity extends AppCompatActivity {
      * Delete - 0
      */
     private void showActionsDialog(final int position) {
-        //CharSequence colors[] = new CharSequence[]{"Editar", "Apagar"};
         CharSequence colors[] = new CharSequence[]{getString(R.string.editar), getString(R.string.apagar)};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
