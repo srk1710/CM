@@ -1,18 +1,25 @@
 <resources>
-    <string name="submit">submit</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="notas">Notas</string>
     <string name="mapa">Mapa</string>
     <string name="perfil">Perfil</string>
-    <string name="title_activity_notas">NotasActivity</string>
+    <string name="title_activity_notas">Notas</string>
 
     <string name="app_name">CM</string>
-    <string name="action_settings">Settings</string>
-    <string name="activity_title_home">Notes</string>
-    <string name="msg_no_notes">No notes found!</string>
-    <string name="lbl_new_note_title">New Note</string>
-    <string name="lbl_edit_note_title">Edit Note</string>
-    <string name="hint_enter_note">Enter your note!</string>
+    <string name="action_settings">Definições</string>
+    <string name="activity_title_home">Notas</string>
+    <string name="msg_no_notes">Não tem notas inseridas</string>
+    <string name="lbl_new_note_title">Nova nota</string>
+    <string name="lbl_edit_note_title">Editar nota</string>
+    <string name="hint_enter_note">Insira a nota</string>
+    <string name="editar">Editar</string>
+    <string name="apagar">Apagar</string>
+    <string name="escolher_op">Escolha a opção</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="insira_nota">Insira uma nota!</string>
+
 </resources>

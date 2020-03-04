@@ -149,10 +149,11 @@ public class NotasActivity extends AppCompatActivity {
      * Delete - 0
      */
     private void showActionsDialog(final int position) {
-        CharSequence colors[] = new CharSequence[]{"Edit", "Delete"};
+        //CharSequence colors[] = new CharSequence[]{"Editar", "Apagar"};
+        CharSequence colors[] = new CharSequence[]{getString(R.string.editar), getString(R.string.apagar)};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Choose option");
+        builder.setTitle(getString(R.string.escolher_op));
         builder.setItems(colors, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -188,12 +189,12 @@ public class NotasActivity extends AppCompatActivity {
         }
         alertDialogBuilderUserInput
                 .setCancelable(false)
-                .setPositiveButton(shouldUpdate ? "update" : "save", new DialogInterface.OnClickListener() {
+                .setPositiveButton(shouldUpdate ? getString(R.string.atualizar) : getString(R.string.guardar), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogBox, int id) {
 
                     }
                 })
-                .setNegativeButton("cancel",
+                .setNegativeButton(getString(R.string.cancelar),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialogBox, int id) {
                                 dialogBox.cancel();
@@ -208,7 +209,7 @@ public class NotasActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Show toast message when no text is entered
                 if (TextUtils.isEmpty(inputNote.getText().toString())) {
-                    Toast.makeText(NotasActivity.this, "Enter note!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NotasActivity.this, getString(R.string.insira_nota), Toast.LENGTH_SHORT).show();
                     return;
                 } else {
                     alertDialog.dismiss();

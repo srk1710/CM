@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CM</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="apagar">Delete</string>
+    <string name="atualizar">Update</string>
+    <string name="cancelar">Cancel</string>
+    <string name="editar">Edit</string>
+    <string name="escolher_op">Chose a option</string>
+    <string name="guardar">Save</string>
+    <string name="hint_enter_note">Insert a note</string>
+    <string name="insira_nota">Insert a note</string>
+    <string name="lbl_edit_note_title">Edit a note</string>
+    <string name="lbl_new_note_title">New note</string>
+    <string name="mapa">Map</string>
+    <string name="notas">Notes</string>
+    <string name="perfil">Profile</string>
+    <string name="title_activity_notas">Notes</string>
+    <string name="msg_no_notes">No notes found!</string>
+</resources>
